@@ -22,3 +22,15 @@
 
         - Children of Client components will always render on the client . Since Client components are not rendering until they reach the Client , when you import and hardcode a child component, they are not rendering until the client as well.
         
+
+### Routing
+    + Next.js will create routes to our page.tsx files based on our file structure
+
+    1. Redirect - next/navigation (Server)
+        + Happens before the page is sent to the browser, so the user never sees the original
+
+    2. useRouter Push (client)
+        + Allows dynamic navigation based on user actions
+
+    3. Link (Client)
+        + Preloads pages in the background, making transitions faster
