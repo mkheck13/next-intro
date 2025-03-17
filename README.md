@@ -34,3 +34,10 @@
 
     3. Link (Client)
         + Preloads pages in the background, making transitions faster
+
+### Context
+    + Context acts as a wrapper that stores data and makes it accessible to any component within it's scope
+
+    + Context is a wrapper we can use to pass data to client components within it's scope
+
+    + You can use context if you have data that a lot of components need access to or if you want to avoid prop drilling, which is when you have data that you have to pass down more than a few different components before it reaches where it's actually needed.

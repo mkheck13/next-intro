@@ -6,14 +6,18 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import UnderText from './UnderText';
 import { useRouter } from 'next/navigation';
+import { useAppContext } from '@/context/context';
+
 
 const UsernameForm = () => {
     
     // const router = useRouter();
     const { push } = useRouter();
 
+    const { username, setUsername } = useAppContext();
 
-    const [username, setUsername] = useState('');
+
+    // const [username, setUsername] = useState('');
 
     const handleSubmit = () => {
         console.log('User Chose: ', username)
